@@ -69,7 +69,7 @@ def run(songs)
     help
     elsif user_command == "play"
     play(songs)
-  else break 
+  user_command = gets.strip
     end
   end
 end
