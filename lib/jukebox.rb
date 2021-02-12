@@ -1,3 +1,5 @@
+require 'pry'
+
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -62,13 +64,13 @@ def run(songs)
   end
   while user_command != "exit" do
      user_command = gets.strip 
-  if user_command == "list"
+    if user_command == "list"
     list(songs)
+    binding.pry
     elsif user_command == "help"
     help
     elsif user_command == "play"
     play(songs)
-
-end
-end
+    end
+  end
 end
