@@ -64,6 +64,7 @@ def run(songs)
     help
     elsif user_command == "play"
     play(songs)
+  else break
 end
 end
 end
