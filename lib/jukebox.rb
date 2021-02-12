@@ -62,8 +62,8 @@ def run(songs)
   if user_command == "exit"
     exit_jukebox
   end
-  binding.pry
   while user_command != "exit" do
+    binding.pry
      user_command = gets.strip 
     if user_command == "list"
     list(songs)
