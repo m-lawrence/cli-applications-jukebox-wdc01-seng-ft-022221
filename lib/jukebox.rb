@@ -64,9 +64,9 @@ def run(songs)
      user_command = gets.strip 
   when user_command == "list"
     list(songs)
-    elsif user_command == "help"
+    when user_command == "help"
     help
-    elsif user_command == "play"
+    when user_command == "play"
     play(songs)
 
 end
