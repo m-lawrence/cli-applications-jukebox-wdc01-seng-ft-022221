@@ -56,8 +56,9 @@ end
 
 def run(songs)
   puts "Please enter a command:"
-  user_command = gets.strip 
-  until user_command == "exit"
+ 
+  until user_command == "exit" do
+     user_command = gets.strip 
   if user_command == "list"
     list(songs)
     elsif user_command == "help"
