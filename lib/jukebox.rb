@@ -60,7 +60,7 @@ def run(songs)
   if user_command == "exit"
     exit_jukebox
   end
-  unless user_command == "exit" do
+  unless user_command == "exit" 
      user_command = gets.strip 
   if user_command == "list"
     list(songs)
