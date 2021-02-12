@@ -62,7 +62,7 @@ def run(songs)
   if user_command == "exit"
     exit_jukebox
   end
-  while user_command != "exit" 
+  until user_command != "exit" 
     if user_command == "list"
     list(songs)
     elsif user_command == "help"
