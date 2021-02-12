@@ -60,13 +60,15 @@ def run(songs)
   if user_command == "exit"
     exit_jukebox
   end
-  
-  when user_command == "list"
+  until user_command == "exit" do
+     user_command = gets.strip 
+  if user_command == "list"
     list(songs)
-    when user_command == "help"
+    elsif user_command == "help"
     help
-    when user_command == "play"
+    elsif user_command == "play"
     play(songs)
 
+end
 end
 end
