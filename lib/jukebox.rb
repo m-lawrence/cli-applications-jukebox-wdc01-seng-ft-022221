@@ -64,9 +64,9 @@ def run(songs)
   end
   while user_command != "exit" do
      user_command = gets.strip 
+     binding.pry
     if user_command == "list"
     list(songs)
-    binding.pry
     elsif user_command == "help"
     help
     elsif user_command == "play"
