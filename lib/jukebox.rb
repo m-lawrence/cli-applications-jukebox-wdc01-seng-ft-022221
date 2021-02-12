@@ -63,11 +63,11 @@ def run(songs)
   until user_command == "exit" do
      user_command = gets.strip 
   if user_command == "list"
-    list(songs)
+    puts list(songs)
     elsif user_command == "help"
-    help
+    puts help
     elsif user_command == "play"
-    play(songs)
+    puts play(songs)
 
 end
 end
