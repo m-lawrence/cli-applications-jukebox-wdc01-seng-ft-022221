@@ -68,5 +68,5 @@ def run(songs)
     when user_command == "play"
     play(songs)
 
-
+end
 end
