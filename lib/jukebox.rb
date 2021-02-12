@@ -69,4 +69,7 @@ def run(songs)
     play(songs)
     end
   end
+  if user_command == "exit"
+    exit_jukebox
+  end
 end
